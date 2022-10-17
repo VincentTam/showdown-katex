@@ -10,7 +10,7 @@
     "asciimath",
     "katex"
   ],
-  "version": "0.8.1",
+  "version": "0.8.2",
   "license": "MIT",
   "browser": "dist/showdown-katex.js",
   "main": "lib/showdown-katex.js",
