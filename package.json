@@ -1,16 +1,17 @@
 {
   "name": "showdown-katex",
-  "author": "obedm503",
-  "homepage": "https://obedm503.github.io/showdown-katex/",
-  "description": "showdown extension that adds latex and asciimath support",
+  "author": "vincenttam",
+  "homepage": "https://vincenttam.github.io/showdown-katex/",
+  "description": "Showdown extension that adds LaTeX, ASCIImath and mhchem support",
   "keywords": [
     "markdown",
     "showdown",
     "latex",
     "asciimath",
-    "katex"
+    "katex",
+    "mhchem"
   ],
-  "version": "0.8.2",
+  "version": "0.9.0",
   "license": "MIT",
   "browser": "dist/showdown-katex.js",
   "main": "lib/showdown-katex.js",

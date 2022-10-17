@@ -1,4 +1,5 @@
 import katex from 'katex';
+import 'katex/dist/contrib/mhchem.js';
 import renderMathInElement from 'katex/dist/contrib/auto-render';
 import showdown from 'showdown';
 import asciimathToTex from './asciimath-to-tex';
