@@ -1,7 +1,7 @@
 {
   "name": "showdown-katex",
-  "author": "vincenttam",
-  "homepage": "https://vincenttam.github.io/showdown-katex/",
+  "author": "obedm503",
+  "homepage": "https://obedm503.github.io/showdown-katex/",
   "description": "Showdown extension that adds LaTeX, ASCIImath and mhchem support",
   "keywords": [
     "markdown",
