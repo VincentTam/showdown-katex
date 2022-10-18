@@ -139,3 +139,38 @@ F(\textbf{w})
 ```
   </div>
 </div>
+
+---
+
+### chemical equations
+
+Examples copied from [mhchem's page](https://mhchem.github.io/MathJax-mhchem/).
+
+<div class="row" markdown="1">
+  <div class="col-md-8" markdown="1">
+    ```latex
+    \ce{CO2 + C -> 2 CO}
+    ```
+  </div>
+  <div class="col-md-4" markdown="1">
+```latex
+\ce{CO2 + C -> 2 CO}
+```
+  </div>
+</div>
+
+<div class="row" markdown="1">
+  <div class="col-md-8" markdown="1">
+    ```latex
+    \pu{1.2e3 kJ mol-1}
+    ```
+  </div>
+  <div class="col-md-4" markdown="1">
+```latex
+\pu{1.2e3 kJ mol-1}
+```
+  </div>
+</div>
+
+Custom delimiters like dollar signs `$ ... $` and escaped brackets `\( ... \)`
+don't work with `\ce{...}` and `\pu{...}`.
