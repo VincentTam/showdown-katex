@@ -99,6 +99,18 @@ x = (-b +- sqrt(b^2-4ac)) / (2a)
 x=\frac{ -b\pm\sqrt{ b^2-4ac } } {2a}
 ```
 
-They will both render the exact same thing. If the examples don't render correctly click [here](https://obedm503.github.io/showdown-katex/).
+They will both render the exact same thing. If the examples don't render correctly click [here](https://vincenttam.github.io/showdown-katex/).
+
+## Chemical equations example
+
+Examples copied from [mhchem's page](https://mhchem.github.io/MathJax-mhchem/).
+
+    ```latex
+    \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
+    ```
+
+```latex
+\ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}
+```
 
 ----

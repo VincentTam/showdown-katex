@@ -5,6 +5,13 @@
 #### NEW
 #### FIX
 
+### 0.9.0 2022-10-18
+- upgrade dependencies
+  - KaTeX: 0.11.1 → 0.16.2
+  - Showdown: 1.9.1 → 2.1.0
+#### NEW
+- added KaTeX `mhchem` extension for writing chemical equations
+
 ### 0.8.0 2020-03-12
 - upgrade dependencies
 #### FIX
