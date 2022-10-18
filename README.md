@@ -1,6 +1,6 @@
 # showdown-katex
 
-> `npm install showdown-katex`
+> `npm install @vincenttam/showdown-katex`
 
 [Showdown](https://github.com/showdownjs/showdown) extension to render [LaTeX](https://www.latex-project.org/) math and [AsciiMath](http://asciimath.org/) using [KaTeX](https://khan.github.io/KaTeX/);
 
