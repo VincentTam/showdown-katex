@@ -1,9 +1,9 @@
 // @ts-check
 import katex from 'katex';
 import 'katex/dist/contrib/mhchem.js';
-import renderMathInElement from 'katex/dist/contrib/auto-render';
+import renderMathInElement from 'katex/dist/contrib/auto-render.js';
 import showdown from 'showdown';
-import asciimathToTex from './asciimath-to-tex';
+import asciimathToTex from './asciimath-to-tex.js';
 
 if (process.env.TARGET === 'cjs') {
   const { JSDOM } = require('jsdom');
