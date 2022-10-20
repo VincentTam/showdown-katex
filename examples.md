@@ -171,6 +171,3 @@ Examples copied from [mhchem's page](https://mhchem.github.io/MathJax-mhchem/).
 ```
   </div>
 </div>
-
-Custom delimiters like dollar signs `$ ... $` and escaped brackets `\( ... \)`
-don't work with `\ce{...}` and `\pu{...}`.
