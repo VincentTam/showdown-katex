@@ -12,26 +12,18 @@
       }
       #sandbox {
         background-color: silver;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-wrap: nowrap;
       }
-      #sandbox > div {
-        width: 100%;
-        padding: 0 15px;
-        margin-bottom: 20px;
-      }
-      #sandbox > div > #sandbox-out,
-      #sandbox > div > #sandbox-in {
-        resize: none;
+      #sandbox > .col-md-6 > #sandbox-out,
+      #sandbox > .col-md-6 > #sandbox-in {
         border: none;
         box-sizing: border-box;
-        min-height: 350px;
-        height: 100%;
+        height: 350px;
+        padding: 10px;
+        resize: none;
         width: 100%;
       }
       #sandbox-in {
+        margin: 10px auto;
         background: #000;
         color: #fff;
         font: 14px Menlo, monospace;
@@ -43,17 +35,8 @@
       }
       #sandbox-out {
         color: black;
+        margin: 20px auto;
         background: white;
-        padding: 10px;
-      }
-
-      @media screen and (min-width: 991px) {
-        #sandbox {
-          flex-direction: row;
-        }
-        #sandbox > div {
-          width: 50%;
-        }
       }
     </style>
   </head>
@@ -62,12 +45,12 @@
     <bootmark src="README.md"></bootmark>
 
     <!-- sandboxed demo -->
-    <div class="container" id="demo">
+    <div class="container">
       <div class="row">
         <h3>Try the live demo</h3>
       </div>
       <div class="row" id="sandbox">
-        <div>
+        <div class="col-md-6">
           <h4 class="text-center">
             Input Markdown
           </h4>
@@ -91,7 +74,7 @@ var some = normal('code');
 ```
           </textarea>
         </div>
-        <div>
+        <div class="col-md-6">
           <h4 class="text-center">
             Output
           </h4>
@@ -146,8 +129,7 @@ var some = normal('code');
             params.set('source', val);
             if (e) {
               // only set ?source when the user types in the box
-              var url =
-                location.origin + location.pathname + '?' + params.toString();
+              var url = location.origin + '?' + params.toString();
               history.pushState({ path: url }, document.title, url);
             }
           } catch (e) {
@@ -162,19 +144,6 @@ var some = normal('code');
               text: '${bootmark}',
             },
           });
-
-          var raf = window.requestAnimationFrame;
-          if (raf) {
-            raf(function() {
-              try {
-                var inHeight = $input.get(0).scrollHeight;
-                var outHeight = $output.get(0).clientHeight;
-                if (inHeight < outHeight) {
-                  $input.height(outHeight);
-                }
-              } catch (e) {}
-            });
-          }
         }
 
         $input.bind('input propertychange', render);
